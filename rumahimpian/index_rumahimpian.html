@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rumah Impian - Pesan Bangun</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f5f5f5; }
+    header {
+      background: url('gambar4.jpg') center/cover no-repeat;
+      color: white;
+      padding: 6rem 1rem;
+      text-align: center;
+      text-shadow: 1px 1px 3px black;
+    }
+    header button {
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    nav { background-color: #34495e; padding: 0.5rem; text-align: center; }
+    nav a { color: white; margin: 0 1rem; text-decoration: none; }
+    section { padding: 2rem; background-color: white; margin-bottom: 1rem; }
+    section#galeri {
+      background: url('background-sketsa.jpg') center/cover no-repeat;
+      backdrop-filter: blur(1px);
+    }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+    .property { text-align: center; background: white; padding: 0.8rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .property img { width: 100%; border-radius: 8px; transition: transform 0.3s; }
+    .property img:hover { transform: scale(1.03); }
+    .deskripsi { text-align: left; margin-top: 0.5rem; font-size: 0.9rem; }
+    .form { max-width: 600px; margin: auto; }
+    input, textarea, select { width: 100%; padding: 0.5rem; margin: 0.5rem 0; border-radius: 4px; border: 1px solid #ccc; }
+    button { padding: 0.7rem 2rem; background-color: #27ae60; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    footer { background: #2c3e50; color: white; text-align: center; padding: 1rem; }
+    .testimonial { background-color: #ecf0f1; padding: 1rem; border-left: 4px solid #27ae60; margin: 1rem 0; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Bangun Rumah Impianmu</h1>
+  <p>Custom desain & lokasi sesuai keinginan</p>
+  <button onclick="location.href='#pesan'">Pesan Sekarang</button>
+</header>
+
+<nav>
+  <a href="#tentang">Tentang Kami</a>
+  <a href="#galeri">Galeri</a>
+  <a href="#pesan">Pesan Sekarang</a>
+  <a href="#kontak">Kontak</a>
+</nav>
+
+<section id="galeri">
+  <h2>Galeri Rumah</h2>
+  <div class="gallery">
+    <div class="property">
+      <img src="gambar1.jpg" alt="Rumah 1">
+      <div class="deskripsi">
+        <p><strong>Harga:</strong> Rp 275 Juta</p>
+        <p><strong>Luas Tanah:</strong> 80 m²</p>
+        <p><strong>Luas Bangunan:</strong> 54 m²</p>
+        <p><strong>Muka:</strong> 6 m</p>
+      </div>
+    </div>
+    <!-- Tambahkan rumah lainnya sesuai pola ini -->
+  </div>
+</section>
+
+</body>
+</html>
